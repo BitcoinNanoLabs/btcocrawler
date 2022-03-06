@@ -27,7 +27,7 @@ export default function(app, nano) {
 
 const fetchQuote = async cur => {
   const resp = await fetch(
-    `https://pro-api.coinmarketcap.com/v1/cryptocurrency/quotes/latest?symbol=NANO&convert=${cur}`,
+    `https://pro-api.coinmarketcap.com/v1/cryptocurrency/quotes/latest?symbol=USDT&convert=${cur}`,
     {
       headers: {
         "X-CMC_PRO_API_KEY": config.coinMarketCapApiKey
@@ -37,7 +37,7 @@ const fetchQuote = async cur => {
 
   if (resp.ok) {
     const data = await resp.json();
-    return data.data.NANO.quote[cur].price;
+    return data.data.USDT.quote[cur].price;
   } else {
     throw new Error(`CoinMarketCap error: ${resp.status} ${resp.statusText}`);
   }
