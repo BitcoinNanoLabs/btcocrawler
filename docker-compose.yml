@@ -9,13 +9,13 @@ services:
   web:
     build: ./
     ports:
-      - "3000:3000"
-      - "3001:3001"
+      - "3007:3007"
+      - "3008:3008"
     volumes:
       - .:/usr/src/app
     links:
       - redis
     environment:
       - NODE_ENV=development
-      - PORT=3000
+      - PORT=3007
       - REDIS_URL=redis://cache

@@ -1,5 +1,5 @@
 {
-  "server": "http://localhost:3001",
+  "server": "http://localhost:3008",
   "websocketServer": "ws.bitcoinnano.org",
   "donationAddress": "btco_1p473uf1g3dii6imtg5mdj1ond3xi6ffungn18n8uyrrunjqtgjufg7hrc8y",
   "currency": {
