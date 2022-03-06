@@ -5,7 +5,7 @@ services:
     image: redis:alpine
     container_name: cache
     ports:
-      - "6379:6379"
+      - "6389:6389"
   web:
     build: ./
     ports:

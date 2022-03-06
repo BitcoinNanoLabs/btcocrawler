@@ -4,7 +4,7 @@
   "clientUrl": "https://block.bitcoinnano.org",
   "raiblocksDir": "/home/ryanlefevre/BitcoinNano",
   "nodeHost": "http://207.244.255.183:7076",
-  "redis": "redis://cache:6379",
+  "redis": "redis://cache:6389",
   "redisNamespace": "development",
   "serverPort": 3001,
   "coinMarketCapApiKey": "b36970a4-269e-443d-afa7-8f318a587dfb",
