@@ -7,7 +7,7 @@
   "redis": "redis://cache:6379",
   "redisNamespace": "development",
   "serverPort": 3001,
-  "coinMarketCapApiKey": "",
+  "coinMarketCapApiKey": "b36970a4-269e-443d-afa7-8f318a587dfb",
   "monitorCurrencyName": "btco",
   "knownMonitors": [],
   "blacklistedPeers": [],
