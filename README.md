@@ -1,4 +1,4 @@
-# NanoCrawler
+# BtcoCrawler
 
 A lightweight web UI for viewing realtime information about your Nano node and exploring the Nano network.
 
@@ -30,7 +30,7 @@ The [websocket server](https://github.com/meltingice/nanovault-ws) is optional, 
 
 ## Development
 
-To run NanoCrawler in development mode, simply run `yarn start`. This will start both the API server and the webpack development server for the front-end. This does not start any of the reoccuring jobs, but can you run those manually if you need the data they provide (see below).
+To run BtcoCrawler in development mode, simply run `yarn start`. This will start both the API server and the webpack development server for the front-end. This does not start any of the reoccuring jobs, but can you run those manually if you need the data they provide (see below).
 
 ## Production Hosting
 
@@ -75,12 +75,12 @@ I use and recommend [PM2](https://www.npmjs.com/package/pm2) for managing NodeJS
 
 ## Localization
 
-NanoCrawler aims to be available in as many languages as possible. If you would like to contribute translations, please see the instructions below and send a Pull Request when ready.
+BtcoCrawler aims to be available in as many languages as possible. If you would like to contribute translations, please see the instructions below and send a Pull Request when ready.
 
 ### Contributing Translations
 
 All strings that are used on the site are defined in the translations files in `src/translations/`. These translation files consist of a simple JSON object. The keys are the stable IDs for each of the strings, which are used in the site code. The values are the corresponding translation. If a string contains a value between two brackets, e.g. `{count}`, that is a dynamic value that is populated in the code. It should be present, as is, in all available translations.
 
-English is the fallback language for NanoCrawler if a particular translation is not present.
+English is the fallback language for BtcoCrawler if a particular translation is not present.
 
-To contribute to NanoCrawler's translations, please email meltingice (see Github profile) to get an invite to our [POEditor](https://poeditor.com/) project. While discouraged, we will accept pull requests with translation updates as well.
+To contribute to BtcoCrawler's translations, please email meltingice (see Github profile) to get an invite to our [POEditor](https://poeditor.com/) project. While discouraged, we will accept pull requests with translation updates as well.

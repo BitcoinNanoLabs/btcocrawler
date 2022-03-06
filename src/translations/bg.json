@@ -169,5 +169,5 @@
     "account.version.0": "Този профил още не е обновен с epoch block. Това означава, че този акаунт все още може да приема non-state блокове.",
     "account.version.1": "Този акаунт е обновен с epoch v1 block и може да приема само state блокове.",
     "block.original.title": "Първоначално съдържание на блока",
-    "block.original.desc": "The RPC response from the {rpcCmd} call. The timestamp field is added by NanoCrawler, and the block contents are JSON decoded."
+    "block.original.desc": "The RPC response from the {rpcCmd} call. The timestamp field is added by BtcoCrawler, and the block contents are JSON decoded."
 }

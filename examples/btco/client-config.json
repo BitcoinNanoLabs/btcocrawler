@@ -1,0 +1,39 @@
+{
+  "server": "http://localhost:3001",
+  "websocketServer": "ws.bitcoinnano.org",
+  "donationAddress": "btco_1p473uf1g3dii6imtg5mdj1ond3xi6ffungn18n8uyrrunjqtgjufg7hrc8y",
+  "currency": {
+    "name": "Bitcoin Nano",
+    "shortName": "BTCO",
+    "precision": 30,
+    "maxSupply": 133248289,
+    "prefixes": ["btco"],
+    "qrPrefix": "btco",
+    "supportsMyNanoNinja": true
+  },
+  "features": {
+    "nodeStatus": true,
+    "searchSuggestions": false,
+    "supportedLanguages": {
+      "en": "English",
+      "cs": "Čeština",
+      "da": "Dansk",
+      "de": "Deutsch",
+      "es": "Español",
+      "fr": "Français",
+      "it": "Italiano",
+      "hr": "Hrvatski",
+      "hu": "Magyar",
+      "id": "Bahasa Indonesia",
+      "nl": "Nederlands",
+      "pt-BR": "Português Brasileiro",
+      "el": "Ελληνικά",
+      "ro": "Română",
+      "ru": "Русский",
+      "sv": "Svenska",
+      "zh-CN": "汉语",
+      "zh-TW": "漢語"
+    }
+  },
+  "serviceMonitors": []
+}
