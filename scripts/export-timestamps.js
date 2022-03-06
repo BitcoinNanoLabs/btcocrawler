@@ -1,4 +1,4 @@
-// This is used to export timestamps from NanoCrawler's own system, which
+// This is used to export timestamps from BtcoCrawler's own system, which
 // can then be used to import into other explorers or the Nano node itself.
 
 const fs = require("fs");
