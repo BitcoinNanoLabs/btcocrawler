@@ -4,6 +4,7 @@ services:
   redis:
     image: redis:alpine
     container_name: cache
+    command: --port 6389
     ports:
       - "6389:6389"
   web:
@@ -19,3 +20,5 @@ services:
       - NODE_ENV=development
       - PORT=3007
       - REDIS_URL=redis://cache
+    depends_on:
+      - redis
