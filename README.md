@@ -32,6 +32,14 @@ The [websocket server](https://github.com/meltingice/nanovault-ws) is optional, 
 
 To run BtcoCrawler in development mode, simply run `yarn start`. This will start both the API server and the webpack development server for the front-end. This does not start any of the reoccuring jobs, but can you run those manually if you need the data they provide (see below).
 
+To run BtcoCrawler inside docker container, you need to run this:
+cp examples/btco/server-config.json .
+cp examples/btco/client-config.json ./src
+vi src/client-config.json => change the server IP
+docker build -f Dockerfile -t dougbs/btcocrawler .
+docker run --net btco -d --name cache redis:alpine
+docker run --net btco -d -p 3007:3007 -p 3008:3008 --name btcocrawler dougbs/btcocrawler:latest
+
 ## Production Hosting
 
 Once the config has been set, you can build the project with `yarn deploy`.
