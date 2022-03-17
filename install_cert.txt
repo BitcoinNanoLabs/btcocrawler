@@ -10,3 +10,7 @@ sudo certbot certonly --standalone
 sudo certbot certonly --webroot
 
 sudo certbot certonly --manual -d \*.block.bitcoinnano.org -d block.bitcoinnano.org --agree-tos --no-bootstrap --manual-public-ip-logging-ok --preferred-challenges dns-01 --server https://acme-v02.api.letsencrypt.org/directory
+
+openssl genrsa -out client-key.pem 2048
+openssl req -new -key client-key.pem -out client.csr
+openssl x509 -req -in client.csr -signkey client-key.pem -out client-cert.pem
