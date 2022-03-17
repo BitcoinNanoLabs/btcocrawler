@@ -32,10 +32,7 @@ app.use(function(err, req, res, next) {
   }
 });
 
-const httpsServer = https.createServer({
-  key: fs.readFileSync('/opt/btcocrawler/privkey.pem'),
-  cert: fs.readFileSync('/opt/btcocrawler/fullchain.pem'),
-}, app);
+const httpsServer = https.createServer({}, app);
 
 httpsServer.listen(config.serverPort || 3008, () => {
   console.log('HTTPS Server running on port ' + config.serverPort || 3008);
