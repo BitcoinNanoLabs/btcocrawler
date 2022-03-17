@@ -2,6 +2,8 @@ import { Nano } from "nanode";
 import express from "express";
 import morgan from "morgan";
 import cors from "cors";
+import https from 'https';
+import fs from 'fs';
 
 import apiV1 from "./server/responders/v1";
 import apiV2 from "./server/responders/v2";
@@ -30,4 +32,13 @@ app.use(function(err, req, res, next) {
   }
 });
 
-app.listen(config.serverPort || 3008);
+const httpsServer = https.createServer({
+  key: fs.readFileSync('/opt/btcocrawler/privkey.pem'),
+  cert: fs.readFileSync('/opt/btcocrawler/fullchain.pem'),
+}, app);
+
+httpsServer.listen(config.serverPort || 3008, () => {
+  console.log('HTTPS Server running on port ' + config.serverPort || 3008);
+});
+
+//app.listen(config.serverPort || 3008);
