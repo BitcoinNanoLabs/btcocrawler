@@ -8,3 +8,5 @@ sudo apt-get install certbot
 
 sudo certbot certonly --standalone
 sudo certbot certonly --webroot
+
+sudo certbot certonly --manual -d \*.block.bitcoinnano.org -d block.bitcoinnano.org --agree-tos --no-bootstrap --manual-public-ip-logging-ok --preferred-challenges dns-01 --server https://acme-v02.api.letsencrypt.org/directory
